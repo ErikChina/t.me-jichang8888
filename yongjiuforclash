@@ -1,8 +1,8 @@
 #
 #-------------------------------------------------------------#
 #  创建者：机场横评
-#  创建时间：2022-07-20 14:47:55
-#  节点数量：16
+#  创建时间：2022-07-21 13:54:45
+#  节点数量：26
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -12,151 +12,221 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"中国香港1","http-opts":{"path":["/"],"headers":{"Host":["hk17.ningmengshui.xyz"]}},"server":"hk17.ningmengshui.xyz","port":80,"uuid":"cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"中国香港2","http-opts":{"path":["/"],"headers":{"Host":["hk2.ningmengshui.xyz"]}},"server":"hk2.ningmengshui.xyz","port":80,"uuid":"cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1","alterId":0,"cipher":"auto","network":"http"}
-  - {"type":"vmess","name":"中国香港3","ws-opts":{"path":"/","headers":{"host":"www.youku.com"}},"server":"hk1.ningmengshui.xyz","port":80,"uuid":"cd623b59-2cef-4d6a-bd1a-7d0d34b9f3e1","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"中国香港4","server":"relay1.wl-node1.com","port":39001,"uuid":"3366c351-2127-4ef1-b633-68eba4b8b251","alterId":0,"cipher":"auto"}
-  - {"type":"vmess","name":"中国香港5","server":"120.241.236.217","port":16246,"uuid":"c7cab382-c1a0-3a50-8606-280124aaad86","alterId":0,"cipher":"auto"}
-  - {"type":"vmess","name":"中国香港6","server":"120.241.236.215","port":16246,"uuid":"c7cab382-c1a0-3a50-8606-280124aaad86","alterId":0,"cipher":"auto"}
-  - {"type":"ss","name":"荷兰1","server":"92.38.184.228","port":2097,"cipher":"chacha20-ietf-poly1305","password":"jRKkoWqkrw2f"}
-  - {"type":"ss","name":"加拿大1","server":"138.197.166.205","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"trojan","name":"新加坡1","server":"73hk01.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"美国1","server":"716sg.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"新加坡2_1","server":"715hk02.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"中国香港8","server":"715hk03.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"中国香港9","server":"715hk02.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"日本1","server":"supernortheast.xn--mesv7f5toqlp.club","port":12002,"password":"dd04c158-1bac-47cd-99c1-5c4f64796dd5","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"新加坡2_2","server":"node.sin.entrance.cyou","port":28000,"password":"7da84a56-a1e2-48f3-a690-374a3973d7e8","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"中国香港7","server":"716sg.ok365.cyou","port":80,"password":"c7e1c8e1-8544-4865-8d6e-fa5cf782c4f8","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"中国香港2","server":"hk03.hoot.cf","port":32181,"cipher":"chacha20-ietf-poly1305","password":"252e5d17-b05f-413a-9630-9d48384834e0"}
+  - {"type":"trojan","name":"中国香港4","server":"73hk02.ok365.cyou","port":80,"password":"d87217b7-d374-4f96-be8f-de960cb8e5d4","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"中国香港3","server":"73hk01.ok365.cyou","port":80,"password":"d87217b7-d374-4f96-be8f-de960cb8e5d4","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"中国香港10","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}},"server":"hk2.elkcloud.cf","port":80,"uuid":"9b641bd5-6b80-359e-a23a-eb7b6f21fc1a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"中国香港9","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"{\"Host\":\"gd.189.cn\"}"}},"server":"hk5.elkcloud.cf","port":80,"uuid":"9b641bd5-6b80-359e-a23a-eb7b6f21fc1a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"中国香港8","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}},"server":"hk8.elkcloud.cf","port":80,"uuid":"9b641bd5-6b80-359e-a23a-eb7b6f21fc1a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"日本2","ws-opts":{"path":"/qatjpji","headers":{"host":"{\"Host\":\"data.video.qiyi.com\"}"}},"server":"jp2.elkcloud.cf","port":80,"uuid":"9b641bd5-6b80-359e-a23a-eb7b6f21fc1a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"美国5","server":"u5.yuzex.top","port":42316,"cipher":"chacha20-ietf-poly1305","password":"252e5d17-b05f-413a-9630-9d48384834e0"}
+  - {"type":"ss","name":"日本5","server":"85.208.108.59","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"日本4","server":"85.208.108.20","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"日本3","server":"85.208.108.59","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"美国2","server":"167.88.61.175","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"美国4","server":"u4.yuzex.top","port":23413,"cipher":"chacha20-ietf-poly1305","password":"252e5d17-b05f-413a-9630-9d48384834e0"}
+  - {"type":"ss","name":"美国3","server":"167.88.61.175","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"瑞士1","server":"r.yuzex.top","port":9822,"cipher":"chacha20-ietf-poly1305","password":"252e5d17-b05f-413a-9630-9d48384834e0"}
+  - {"type":"ss","name":"德国1","server":"52.58.249.78","port":57824,"cipher":"chacha20-ietf-poly1305","password":"pryhyxya"}
+  - {"type":"vmess","name":"中国香港7","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}},"server":"hk4.elkcloud.cf","port":80,"uuid":"9b641bd5-6b80-359e-a23a-eb7b6f21fc1a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"中国香港6","server":"hkt.52147.top","port":443,"password":"cf18400b-0935-4c24-9911-88a7174ab2ba","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"澳大利亚2","server":"36.137.102.237","port":30070,"password":"7b453cb8-9582-4e47-80ba-7809f6908d7f","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"美国7","server":"167.88.61.2","port":808,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"美国6","server":"u6.yuzex.top","port":9822,"cipher":"chacha20-ietf-poly1305","password":"252e5d17-b05f-413a-9630-9d48384834e0"}
+  - {"type":"ss","name":"美国9","server":"167.88.61.213","port":7307,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"trojan","name":"中国香港5","server":"73hk01.ok365.cyou","port":80,"password":"d87217b7-d374-4f96-be8f-de960cb8e5d4","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"澳大利亚1","server":"36.139.153.200","port":30070,"password":"7b453cb8-9582-4e47-80ba-7809f6908d7f","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"韩国1","server":"hk13.bp777.buzz","port":21665,"uuid":"2ad3fec6-aa85-49af-96be-3c33fa98933a","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"ss","name":"美国1","server":"167.88.61.175","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -179,22 +249,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国香港1
       - 中国香港2
-      - 中国香港3
       - 中国香港4
-      - 中国香港5
-      - 中国香港6
-      - 荷兰1
-      - 加拿大1
-      - 新加坡1
-      - 美国1
-      - 新加坡2_1
-      - 中国香港8
+      - 中国香港3
+      - 中国香港10
       - 中国香港9
-      - 日本1
-      - 新加坡2_2
+      - 中国香港8
+      - 日本2
+      - 美国5
+      - 日本5
+      - 日本4
+      - 日本3
+      - 美国2
+      - 美国4
+      - 美国3
+      - 瑞士1
+      - 德国1
       - 中国香港7
+      - 中国香港6
+      - 澳大利亚2
+      - 美国7
+      - 美国6
+      - 美国9
+      - 中国香港5
+      - 澳大利亚1
+      - 韩国1
+      - 美国1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
